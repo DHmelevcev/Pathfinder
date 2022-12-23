@@ -927,7 +927,7 @@ int main()
 					}
 				}
 
-				if (event.mouseButton.button == Mouse::Right && intermediates.size())
+				if (!buildingMode && event.mouseButton.button == Mouse::Right && intermediates.size())
 				{
 					MyPoint place(event.mouseButton.x, event.mouseButton.y);
 					MyPoint p_to_delete = *place.find_closest(intermediates);
