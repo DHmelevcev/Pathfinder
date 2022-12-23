@@ -703,14 +703,14 @@ bool load_scene(string file_name, float& ROBOT_SIZE, shared_ptr<MyPoint>& start,
 {
 	ifstream file(file_name);
 
-	float NEW_ROBOT_SIZE = 1.f;
-	shared_ptr<MyPoint> new_start;
-	shared_ptr<MyPoint> new_finish;
-	vector<MyRectangle> new_rectangles;
-	vector<MyPoint> new_intermediates;
-
 	if (file.is_open())
 	{
+		float NEW_ROBOT_SIZE = 1.f;
+		shared_ptr<MyPoint> new_start;
+		shared_ptr<MyPoint> new_finish;
+		vector<MyRectangle> new_rectangles;
+		vector<MyPoint> new_intermediates;
+
 		string str;
 		float x1, y1, x2, y2;
 
