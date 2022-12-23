@@ -554,8 +554,8 @@ Graph build_visibility_graph(vector<MyPoint> points, size_t rect_size)
 
 				int left = 0, right = 0;
 				MySegment seg(points[i], points[j]);
-				if (seg.cross(MySegment(points[i], points[r * 4 + 2])) > 0)	left++;
-				if (seg.cross(MySegment(points[i], points[r * 4 + 2])) < 0)	right++;
+				if (seg.cross(MySegment(points[i], points[r * 4 + 2])) > 0) left++;
+				if (seg.cross(MySegment(points[i], points[r * 4 + 2])) < 0) right++;
 				if (seg.cross(MySegment(points[i], points[r * 4 + 3])) > 0) left++;
 				if (seg.cross(MySegment(points[i], points[r * 4 + 3])) < 0) right++;
 				if (seg.cross(MySegment(points[i], points[r * 4 + 4])) > 0) left++;
